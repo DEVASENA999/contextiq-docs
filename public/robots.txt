@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Disallow: /dashboard
+Disallow: /chat
+Disallow: /upload
+Disallow: /settings
+Disallow: /auth
