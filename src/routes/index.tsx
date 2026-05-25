@@ -4,9 +4,9 @@ import { ArrowRight, FileText, Search, MessageSquare, Sparkles, Lock, Zap } from
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Lumen — Chat with your documents using AI" },
+      { title: "DocGPT — Chat with your documents using AI" },
       { name: "description", content: "Upload PDFs, DOCX, and text files. Get instant answers, summaries, and semantic search across your entire library." },
-      { property: "og:title", content: "Lumen — AI Document Intelligence" },
+      { property: "og:title", content: "DocGPT — AI Document Intelligence" },
       { property: "og:description", content: "Upload PDFs, DOCX, and text files. Get instant answers powered by RAG." },
     ],
   }),
@@ -23,7 +23,7 @@ function Landing() {
             <div className="grid h-8 w-8 place-items-center rounded-lg bg-primary text-primary-foreground">
               <Sparkles className="h-4 w-4" />
             </div>
-            <span className="font-display text-xl">Lumen</span>
+            <span className="font-display text-4xl font-sans">DocGPT</span>
           </Link>
           <div className="flex items-center gap-2">
             <Link
@@ -55,7 +55,7 @@ function Landing() {
           </h1>
           <p className="mx-auto mt-6 max-w-2xl text-lg text-muted-foreground">
             Upload PDFs, DOCX, and text files. Ask questions in plain English.
-            Lumen finds the answers across your entire library — with citations.
+            DocGPT finds the answers across your entire library — with citations.
           </p>
           <div className="mt-10 flex flex-wrap items-center justify-center gap-3">
             <Link
@@ -82,7 +82,7 @@ function Landing() {
                 <div className="h-2 w-2 rounded-full bg-destructive/70" />
                 <div className="h-2 w-2 rounded-full bg-primary/40" />
                 <div className="h-2 w-2 rounded-full bg-primary" />
-                <span className="ml-2">chat.lumen.app</span>
+                <span className="ml-2">chat.docgpt.app</span>
               </div>
               <div className="space-y-4 text-sm">
                 <div className="flex gap-3">
@@ -117,7 +117,7 @@ function Landing() {
         </div>
         <div className="grid gap-6 md:grid-cols-3">
           {[
-            { icon: FileText, title: "Multi-format upload", desc: "PDFs, DOCX, plain text — drop it in and Lumen handles the rest." },
+            { icon: FileText, title: "Multi-format upload", desc: "PDFs, DOCX, plain text — drop it in and DocGPT handles the rest." },
             { icon: Search, title: "Semantic search", desc: "Find concepts, not just keywords. Vector search across every chunk." },
             { icon: MessageSquare, title: "Chat with citations", desc: "Every answer cites the exact source so you can verify in one click." },
             { icon: Sparkles, title: "Auto summaries", desc: "Every document gets an executive summary the moment it lands." },
@@ -153,7 +153,7 @@ function Landing() {
 
       <footer className="border-t border-border">
         <div className="mx-auto max-w-6xl px-6 py-8 text-xs text-muted-foreground">
-          © {new Date().getFullYear()} Lumen. Built with Lovable.
+          DocGPT
         </div>
       </footer>
     </div>
