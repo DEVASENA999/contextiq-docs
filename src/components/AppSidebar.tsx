@@ -31,7 +31,7 @@ export function AppSidebar() {
         <div className="grid h-8 w-8 place-items-center rounded-lg bg-primary text-primary-foreground">
           <Sparkles className="h-4 w-4" />
         </div>
-        <span className="font-display text-xl">Lumen</span>
+        <span className="font-display text-4xl font-sans">DocGPT</span>
       </div>
 
       <nav className="flex-1 space-y-1 px-3">
