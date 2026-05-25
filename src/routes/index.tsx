@@ -153,7 +153,7 @@ function Landing() {
 
       <footer className="border-t border-border">
         <div className="mx-auto max-w-6xl px-6 py-8 text-xs text-muted-foreground">
-          DocGPT
+          © 2026 DocGPT. Built By Deva.
         </div>
       </footer>
     </div>
