@@ -7,7 +7,7 @@ import { User, Mail, Shield } from "lucide-react";
 export const Route = createFileRoute("/_authenticated/settings")({
   head: () => ({
     meta: [
-      { title: "Settings — Lumen" },
+      { title: "Settings — DocGPT" },
       { name: "description", content: "Account settings" },
       { name: "robots", content: "noindex" },
     ],

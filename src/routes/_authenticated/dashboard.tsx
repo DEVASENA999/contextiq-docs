@@ -11,7 +11,7 @@ import { formatDistanceToNow } from "date-fns";
 export const Route = createFileRoute("/_authenticated/dashboard")({
   head: () => ({
     meta: [
-      { title: "Library — Lumen" },
+      { title: "Library — DocGPT" },
       { name: "description", content: "Your document intelligence library" },
       { name: "robots", content: "noindex" },
     ],

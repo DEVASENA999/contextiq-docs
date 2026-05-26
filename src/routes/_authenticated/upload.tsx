@@ -10,7 +10,7 @@ import { UploadCloud, FileText, Loader2 } from "lucide-react";
 export const Route = createFileRoute("/_authenticated/upload")({
   head: () => ({
     meta: [
-      { title: "Upload — Lumen" },
+      { title: "Upload — DocGPT" },
       { name: "description", content: "Upload documents to your AI library" },
       { name: "robots", content: "noindex" },
     ],

@@ -59,7 +59,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "viewport", content: "width=device-width, initial-scale=1" },
       { title: "DocGPT — AI Document Intelligence" },
       { name: "description", content: "Upload, search, and chat with your documents using AI-powered semantic search and RAG." },
-      { name: "author", content: "Lumen" },
+      { name: "author", content: "DocGPT" },
       { property: "og:title", content: "DocGPT — AI Document Intelligence" },
       { property: "og:description", content: "Upload, search, and chat with your documents using AI-powered semantic search and RAG." },
       { property: "og:type", content: "website" },
