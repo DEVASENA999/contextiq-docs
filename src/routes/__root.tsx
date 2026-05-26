@@ -57,13 +57,15 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lumen — AI Document Intelligence" },
+      { title: "DocGPT — AI Document Intelligence" },
       { name: "description", content: "Upload, search, and chat with your documents using AI-powered semantic search and RAG." },
       { name: "author", content: "Lumen" },
-      { property: "og:title", content: "Lumen — AI Document Intelligence" },
-      { property: "og:description", content: "Chat with your documents. Find answers across your library instantly." },
+      { property: "og:title", content: "DocGPT — AI Document Intelligence" },
+      { property: "og:description", content: "Upload, search, and chat with your documents using AI-powered semantic search and RAG." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:title", content: "DocGPT — AI Document Intelligence" },
+      { name: "twitter:description", content: "Upload, search, and chat with your documents using AI-powered semantic search and RAG." },
     ],
     links: [
       { rel: "stylesheet", href: appCss },
