@@ -66,8 +66,8 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:title", content: "DocGPT — AI Document Intelligence" },
       { name: "twitter:description", content: "Upload, search, and chat with your documents using AI-powered semantic search and RAG." },
-      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/e1b93dae-8885-41a3-be75-836de1f06cff/id-preview-661e27d1--4b264e0b-1fc4-4c88-815d-b7672c3bd23f.lovable.app-1779790164326.png" },
-      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/e1b93dae-8885-41a3-be75-836de1f06cff/id-preview-661e27d1--4b264e0b-1fc4-4c88-815d-b7672c3bd23f.lovable.app-1779790164326.png" },
+      { property: "og:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/attachments/og-images/78981c29-1c50-4c1d-a51f-72a306b81e93" },
+      { name: "twitter:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/attachments/og-images/78981c29-1c50-4c1d-a51f-72a306b81e93" },
     ],
     links: [
       { rel: "stylesheet", href: appCss },
