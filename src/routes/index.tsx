@@ -90,7 +90,7 @@ function Landing() {
                   <p className="pt-1">What were the key risks flagged in the Q3 audit report?</p>
                 </div>
                 <div className="flex gap-3">
-                  <div className="grid h-7 w-7 shrink-0 place-items-center rounded-full bg-primary text-xs text-primary-foreground">L</div>
+                  <div className="grid h-7 w-7 shrink-0 place-items-center rounded-full bg-primary text-xs text-primary-foreground">D</div>
                   <div className="space-y-2 pt-1">
                     <p>Three risks were flagged <span className="text-primary">[Source 1]</span>:</p>
                     <ul className="list-disc space-y-1 pl-5 text-muted-foreground">

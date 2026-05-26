@@ -12,7 +12,7 @@ import { formatDistanceToNow } from "date-fns";
 export const Route = createFileRoute("/_authenticated/chat")({
   head: () => ({
     meta: [
-      { title: "Chat — Lumen" },
+      { title: "Chat — DocGPT" },
       { name: "description", content: "Chat with your documents" },
       { name: "robots", content: "noindex" },
     ],
@@ -161,7 +161,7 @@ function ChatPage() {
                 </div>
                 <h2 className="font-display text-3xl">Ask anything about your library</h2>
                 <p className="mx-auto mt-2 max-w-sm text-sm text-muted-foreground">
-                  Lumen will search your documents and answer with citations.
+                  DocGPT will search your documents and answer with citations.
                 </p>
                 <div className="mx-auto mt-6 grid max-w-xl gap-2">
                   {[

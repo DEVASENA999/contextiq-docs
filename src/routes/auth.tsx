@@ -8,8 +8,8 @@ import { Sparkles, ArrowLeft } from "lucide-react";
 export const Route = createFileRoute("/auth")({
   head: () => ({
     meta: [
-      { title: "Sign in — Lumen" },
-      { name: "description", content: "Sign in to your Lumen account to access your document intelligence library." },
+      { title: "Sign in — DocGPT" },
+      { name: "description", content: "Sign in to your DocGPT account to access your document intelligence library." },
       { name: "robots", content: "noindex" },
     ],
   }),
@@ -76,7 +76,7 @@ function AuthPage() {
             <div className="grid h-9 w-9 place-items-center rounded-lg bg-primary text-primary-foreground">
               <Sparkles className="h-4 w-4" />
             </div>
-            <span className="font-display text-2xl">Lumen</span>
+            <span className="font-display text-2xl">DocGPT</span>
           </div>
           <h1 className="font-display text-3xl">{mode === "signin" ? "Welcome back" : "Create your account"}</h1>
           <p className="mt-1 text-sm text-muted-foreground">
