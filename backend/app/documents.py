@@ -45,6 +45,9 @@ async def upload(
     user: User = Depends(current_user),
     db: AsyncSession = Depends(get_session),
 ):
+    import logging
+    logger = logging.getLogger(__name__)
+
     mime = file.content_type or "application/octet-stream"
     if mime not in ALLOWED and not (file.filename or "").lower().endswith((".pdf", ".docx", ".txt")):
         raise HTTPException(400, "Unsupported file type. Use PDF, DOCX, or TXT.")
@@ -52,7 +55,12 @@ async def upload(
     Path(settings.upload_dir).mkdir(parents=True, exist_ok=True)
     ext = ALLOWED.get(mime) or Path(file.filename or "").suffix or ".bin"
     dest = Path(settings.upload_dir) / f"{doc_id}{ext}"
-    contents = await file.read()
+
+    # Enforce server-side size limit (20 MB) to prevent memory exhaustion
+    MAX_BYTES = 20 * 1024 * 1024
+    contents = await file.read(MAX_BYTES + 1)
+    if len(contents) > MAX_BYTES:
+        raise HTTPException(413, "File exceeds 20 MB limit")
     dest.write_bytes(contents)
 
     doc = Document(
@@ -69,9 +77,10 @@ async def upload(
         rag.index_document(user.id, doc.id, doc.filename, text)
         doc.summary = rag.summarize(text)
         doc.status = "ready"
-    except Exception as e:  # noqa: BLE001
+    except Exception:
+        logger.exception("Processing failed for doc %s", doc_id)
         doc.status = "error"
-        doc.error = str(e)
+        doc.error = "Processing failed. Please try again or contact support."
     await db.commit()
     await db.refresh(doc)
     return doc
