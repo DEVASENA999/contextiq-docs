@@ -1,4 +1,4 @@
-# Lumen FastAPI Backend
+# DocGPT FastAPI Backend
 
 FastAPI + LangChain + ChromaDB + JWT auth. Gemini or OpenAI as the LLM.
 
